@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body{
+            background-image: url(images/car-parking-night-view_1331082-685.avif);
+            background-repeat: no-repeat;
+            background-size: cover; /* Makes the image cover the entire area */
+            background-position: center; /* Centers the image */
+            
+        }
+        /* we want the nav bar to be dark  */
+         .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 20px;
+        }
+        /* we want the links nott to appear like they are in an ordered list */
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        /* we want the nav links to be in white with a size of 2 em */
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 2em;
+            padding: 8px 12px;
+            transition: background 0.3s;
+        }
+        /* we want them tto behave when we hover on them */
+        .navbar .nav-links a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        h2 {
+            font-size: 3em;
+            color: #333;
+            margin-top: 20px;
+            background-color: none;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #myreserv {
+            background-image: url(images/blurred-abstract-city-bokeh-car-lights-background-night-city-traffic-jams-highway-night-life_548821-8628.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover; /* Makes the image cover the entire area */
+            background-position: center; /* Centers the image */
+            
+        }
+        input {
+            width: 70%; 
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body >
+    <div class=" container ">
+        <!-- we want to have a nav bar  -->
+        <section class="row">
+            <nav class="navbar">
+                <div ><img src="images/Turisprime_Logo-300x126.png" alt="car loogo" width="100%"></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="datareservation.html">Reserve</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+
+         </section>
+         <!-- end of the nav bar  -->
+      
+        <section  class="row p-5" id="myreserv"> 
+            <h2 class="display 1 text-center text-white text-uppercase67" > Reservation</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header  text-white" style="background-color: #555;">
+                            <h4 class="text-capitalize">Your Itinery</h4>
+                        </div>
+                        <!-- end of card header  -->
+                        <div class="card-body bg-warning">
+                            <p>pick up</p>
+                            <p>--</p>
+                            <p>--</p>
+                            <p>drop off</p>
+                            <p>--</p>
+                            <p>--</p>
+    
+                        </div>
+                        <!-- end of card body  -->
+                    </div>
+                    <!-- end of card  -->
+                </div>
+                <!-- ens of col  -->
+                 <div class="col-md-4">
+                    <div>
+                        <div class="card">
+                            <div class="card-header  text-white" style="background-color: #555;">
+                                <h4 class="text-capitalize"> Choose your Car</h4>
+                            </div>
+                            <!-- end of card header  -->
+                            <div class="card-body bg-warning">
+                                <p>pick up</p>
+                                <p>--</p>
+                                <p>--</p>
+                                <p>drop off</p>
+                                <p>--</p>
+                                <p>--</p>
+        
+                            </div>
+                            <!-- end of card body  -->
+                                
+        
+                        </div>
+                        <!-- end of card  -->
+                    </div>
+                </div>
+                <!-- ens of col  -->
+                <div class="col-md-4">
+                    <div>
+                        <div class="card">
+                            <div class="card-header  text-white" style="background-color: #555;">
+                                <h4 class="text-capitalize " style="color: white;"> reserve your car</h4>
+                            </div>
+                            <!-- end of card header  -->
+                            <div class="card-body bg-warning">
+                                <p>pick up</p>
+                                <p>--</p>
+                                <p>--</p>
+                                <p>drop off</p>
+                                <p>--</p>
+                                <p>--</p>
+        
+                            </div>
+                            <!-- end of card body  -->
+                                
+    
+                        </div>
+                        <!-- end of card  -->
+                    </div>
+    
+                </div>
+                <!-- ens of col  -->
+                 
+            </div>
+            <!-- end of row  -->       
+        </section>
+        <!-- end of section 1  -->
+         
+         <hr>
+
+
+         <!-- we want anotther section  -->
+
+            <!-- we wantt tthe first child  -->
+             <h3 class="text-capitalize text-white text-center"> <b>Reserve your car</b></h3> <br><br>
+
+              <section class="row bg-warning">
+                <div class="col-md-8">
+                    <!-- <img src="images/car.jpg" alt="car" width="100%" >  -->
+                     <form action="" class="p-5">
+                        <fieldset class="">
+                            <legend class=" " > <b>Pick Up</b> </legend>
+                            <p class="text-capitalize">place to pick up your car</p>
+                            <select name="" id="" placeholder="choose office">
+                                <option value=" ">choose an office</option>
+                                <option value="">Nairobi</option>
+                                <option value="">Mombasa</option>
+                                <option value="">Nakuru</option>
+                            </select><br><br>
+                            <label for="">Return to the same location</label>
+    
+                            <input type="checkbox" width="10%" required>
+                        
+                            <br><br>
+                            <label for=""> <b>pick-up date</b></label><br>
+                            <input type="date" placeholder="return date" width="100%" required>
+    
+                        </fieldset> <br><br>
+    
+                        <fieldset>
+                            <legend>RETURN</legend>
+                            <h4>Drop Date/Time </h4><br>
+                            <input type="date">
+                        </fieldset>
+                        <br>
+                        <input type="submit" value="Continue reservation" class="bg-dark text-white">
+                     </form>
+                </div>
+
+              
+            
+            <!-- end of first child  -->
+
+
+             <!-- we wantt he second child  -->
+             <div class="col-md-4 text-start">
+                <h2>Car</h2>
+                <p>Please select your vehicle</p>
+                <!-- we want find your car option here  -->
+                 <h4>RATE</h4> <br>
+                 <input type="text">
+                 <!-- we want an option to scroll up and down  -->
+                  <br><br>
+                   <h4>ADD-ON</h4>
+                   <br>
+                   <input type="text">
+                   <!-- we want the scroll option  -->
+                    <br><br>
+                    <h4>Estimated Cost</h4>
+                    <!-- we want the customer to be given the totals here  -->
+                    <br>
+                    <input type="number">
+              
+             </div>
+             <!-- end of second child  -->
+              
+            
+
+            
+         </section>
+         <!-- end of reserve your car  -->
+          <br>
+
+         <!-- we want a contact section/ -->
+          <section class="row text-white  p-5" style="background-color: #555;">
+            <div class="col-md-8 row text-center">
+                <div class="col-md-6">
+                    <p><b>conact us</b> <br>
+                        <b>Phone :</b> +25497525986 <br>
+                        <b>Email:</b> info@Turisprime.com <br>
+                        <b>Website:</b> www.turisprime.com <br>
+                        <b>Address:</b> 123 Main streat Waiyaki way,Nairobi
+                    </p>
+                </div>
+                <!-- end oof contactt division  -->
+                 <div class="col-md-6">
+                    <p>
+                        <b>Operattion Hours</b> <br>
+                        <b>Monday - Friday :</b> 9:00AM to 6:00PM <br>
+                        <b>Saturday :</b> 10:00 Am too 4:00PM <br>
+                        <b>Sunday :</b> closed
+                    </p>
+
+                 </div>
+                 <!-- end of operation hour division  -->
+
+            </div>
+            <!-- end of child one  -->
+            <div class="col-md-4 row "> 
+                <div class="col-md-4">
+                    <a href="http://instagram.com"> <img src="images/in.png" alt="instagram"></a>
+                    <p><b>instagram</b></p>
+
+                </div>
+                <!-- end of instagram section  -->
+                 <div class="col-md-4">
+                    <a href="http://facebook.com"><img src="images/fb.png" alt="facebook"></a>
+                    <p><b>facebook</b></p>
+
+                 </div>
+                 <!-- end of facebook section  -->
+                  <div class="col-md-4">
+                    <a href="https://x.com/"><img src="images/x.png" alt="twitter"></a>
+                    <p><b>twitter</b></p>
+
+                  </div>
+                  <!-- end of facebook section  -->
+               
+                
+               
+
+             </div>
+             <!-- end of child two  -->
+          </section>
+          <!-- end of contact section  -->
+
+          
+             <!-- we wan to end with a footer  -->
+             <section class="row">
+                <div class="col-md-12 bg-dark text-white text-center">
+                    <p> &copy; 2025 Jason Gitau</p>
+
+                </div>
+
+         
+        
+                 
+
+           
+
+             
+               
+
+    
+
+    </div>
+</body>
+</html>
